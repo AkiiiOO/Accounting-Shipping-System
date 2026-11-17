@@ -1,0 +1,79 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #f4f6f9;
+}
+.header {
+    background-color: #24364b;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 25px;
+}
+
+.system-name {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-logout {
+    float: right;
+    font-size: 17px;
+}
+
+.user-logout a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* SIDE NAVIGATION */
+.sidebar {
+    background-color: #30445c;
+    width: 220px;
+    min-height: 600px;
+    float: left;
+    padding-top: 20px;
+}
+
+.sidebar h3 {
+    color: #aebdce;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #45617f;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 260px;
+    padding: 25px;
+}
+
+.main-content h2 {
+    color: #24364b;
+}

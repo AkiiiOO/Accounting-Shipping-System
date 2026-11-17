@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="new_project.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Working title</title>
+    <link href="Homestyle/homestyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div class="header">
+        <div class="system-name">
+            RANDOM SYSTEM
+        </div>
+        <div class="user-logout">
+            <span>John | Administrator</span>
+            <a href="Logout.aspx" class="logout-btn">Logout</a>
+        </div>
+    </div>
+    
+     <div class="sidebar">
+        <h3>MAIN MENU</h3>
+
+        <a href="Home.aspx" class="nav-link">Dashboard</a>
+        <a href="Shipment.aspx" class="nav-link">Shipments</a>
+        <a href="#">Accounting</a>
+        <a href="#">Reports</a>
+        <a href="#">User Management</a>
+        <a href="#">Settings</a>
+    </div>
+    
+    <div id="main-content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <script src="Script/navigation.js" type="text/javascript"></script>
+</body>
+</html>
