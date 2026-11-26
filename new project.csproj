@@ -54,10 +54,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Home.aspx" />
-    <Content Include="Homestyle\homestyle.css" />
+    <Content Include="Style\homestyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientManagement.aspx.cs">
+      <DependentUpon>ClientManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientManagement.aspx.designer.cs">
+      <DependentUpon>ClientManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,9 +89,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientManagement.aspx" />
+    <Content Include="Script\ClientMscript.js" />
     <Content Include="Script\navigation.js" />
     <Content Include="Shipment.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Style\ClientMstyle.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -104,7 +114,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49870</DevelopmentServerPort>
+          <DevelopmentServerPort>49871</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
